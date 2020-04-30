@@ -19,9 +19,9 @@ def start_assist():
 
     with Assistant(credentials) as assistant:
         for event in assistant.start():
+            if debug:
+                print(event)
             for handler in HANDLERS:
-                if debug:
-                    print(event)
                 handler(event, debug=debug)
 
 if __name__ == '__main__':
