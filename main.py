@@ -21,7 +21,6 @@ def start_assist():
         for event in assistant.start():
             for handler in HANDLERS:
                 if debug:
-                    print("[DEBUG] event triggered.")
                     print(event)
                 handler(event, debug=debug)
 
