@@ -36,7 +36,7 @@ class request_handler(__abs_handler):
     that sends requests.
     '''
     def __init__(self, handler_name, regex, method, request):
-        super().__init__(self, handler_name, regex)
+        super().__init__(handler_name, regex)
         self.method = method.lower()
         self.request = request
 
@@ -60,7 +60,7 @@ class function_handler(__abs_handler):
     that execute functions.
     '''
     def __init__(self, handler_name, regex, function):
-        super().__init__(self, handler_name, regex)
+        super().__init__(handler_name, regex)
         self.function = function
     
     def do_action(self):
