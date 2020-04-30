@@ -24,6 +24,8 @@ def start_assist():
 
 if __name__ == '__main__':
     try:
+        if debug:
+            print("[INFO] program started.")
         start_assist()
     finally:
         if debug:
