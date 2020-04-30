@@ -20,13 +20,16 @@ def start_assist():
     with Assistant(credentials) as assistant:
         for event in assistant.start():
             for handler in HANDLERS:
+                if debug:
+                    print("[DEBUG] event triggered.")
+                    print(event)
                 handler(event, debug=debug)
 
 if __name__ == '__main__':
     try:
         if debug:
-            print("[INFO] program started.")
+            print("[DEBUG] program started.")
         start_assist()
     finally:
         if debug:
-            print("[INFO] program ended.")
+            print("[DEBUG] program ended.")
