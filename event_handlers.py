@@ -1,12 +1,12 @@
 import requests
 
 from lib.base_handlers import request_handler, function_handler
-from handle_functions import example_of_function_handler, okgoogle_function
+from handle_functions import example_of_function, okgoogle_function
 
 example_of_function_handler = function_handler(
     handler_name = "example of function handler,",
     regex = "(?<![a-z])example of get handler(?![a-z])",
-    function=example_of_function_handler
+    function=example_of_function
 )
 
 example_of_get_handler = request_handler(
