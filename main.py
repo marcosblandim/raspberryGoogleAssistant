@@ -8,6 +8,11 @@ from event_handlers import HANDLERS
 debug=True
 
 def start_assist():
+    if debug:
+        print("[DEBUG] possible commands:")
+        for handler in HANDLERS:
+            print("-> " + handler.handler_name)
+
     credentials = path.join(
         path.expanduser('/home/pi/.config'),
         'google-oauthlib-tool',
