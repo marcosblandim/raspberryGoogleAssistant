@@ -107,8 +107,8 @@ okgoogle_handler = function_handler(
     function = okgoogle_function
 )
 
-HANDLERS = list(
+HANDLERS = [
     example_of_function_handler,
     example_of_get_handler,
     reboot_handler,
-)
+]
