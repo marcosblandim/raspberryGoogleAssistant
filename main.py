@@ -32,4 +32,4 @@ if __name__ == '__main__':
         start_assist()
     finally:
         if debug:
-            print("[DEBUG] program ended.")
+            print("\r[DEBUG] program ended.")
