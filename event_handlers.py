@@ -37,7 +37,7 @@ led_on_handler = request_handler(
             "Referer": "http://192.168.0.3/",
             "Accept-Encoding": "gzip, deflate",
             "Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
-            "Cookie": "Authorization=Basic%20admin%3A21232f297a57a5a743894a0e4a801fc3",
+            "Cookie": "Authorization=Basic%20admin%",
         },
         "data": {
             "operation": "write",
@@ -65,7 +65,7 @@ led_off_handler = request_handler(
             "Referer": "http://192.168.0.3/",
             "Accept-Encoding": "gzip, deflate",
             "Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
-            "Cookie": "Authorization=Basic%20admin%3A21232f297a57a5a743894a0e4a801fc3",
+            "Cookie": "Authorization=Basic%20admin%",
         },
         "data": {
             "operation": "write",
@@ -93,7 +93,7 @@ reboot_handler = request_handler(
             "Referer": "http://192.168.0.3/",
             "Accept-Encoding": "gzip, deflate",
             "Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
-            "Cookie": "Authorization=Basic%20admin%3A21232f297a57a5a743894a0e4a801fc3",
+            "Cookie": "Authorization=Basic%20admin%",
         },
         "data": {
             "operation": "write",
